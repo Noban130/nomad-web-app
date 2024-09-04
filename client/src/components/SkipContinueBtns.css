@@ -1,0 +1,80 @@
+.btnsContainer {
+    margin-top: auto;
+    width: 100%;
+    max-width: 430px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skipBtnOnly {
+    margin-top: auto;
+    margin-left: auto;
+    padding:  10px 30px;
+
+    max-width: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+
+    background-color: #ffffff20;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000040;
+}
+
+.skipBtn {
+    padding: 10px;
+    max-width: 105px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    flex: 1;
+    
+    background-color: #ffffff20;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000040;
+}
+
+.skipText {
+    text-align: center;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.continueBtn {
+    padding: 10;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    flex: 2;
+
+    background-color: #fff;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 12px #00000040;
+}
+
+.continueBtnText {
+    text-align: center;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.continueBtnImg {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}

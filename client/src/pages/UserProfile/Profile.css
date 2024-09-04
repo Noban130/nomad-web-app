@@ -1,0 +1,646 @@
+.profile-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+/*------------------ navbar -----------------*/
+
+.profile-container .navbar {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-container .navbar .right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile-container .navbar .left .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.profile-container .navbar .right .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.profile-container .darkmode-logout-container {
+    position: absolute;
+    top: 56px;
+    right: 15px;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px #00000017;
+
+    z-index: 1000;
+}
+
+.profile-container .darkmode-logout-container button {
+    padding: 8px 20px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+/*----------------- profile-img-username -----------------*/
+.profile-img-username {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.profile-img-username .img-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img-username .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img-username .username-country {
+    width: 100%;
+}
+
+.profile-img-username .username-country .fullname {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.profile-img-username .username-country .username {
+    margin-top: -5px;
+    width: 100%;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.profile-img-username .wallet {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-img-username .wallet img {
+    width: 100%;
+}
+
+.profile-img-username .wallet p {
+    margin-top: -4px;
+    font-size: 12px;
+}
+
+/*------------------- connections-trips-container ----------------------*/
+.connections-trips-container {
+    width: 100%;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.connections-trips-container .connections-trips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.connections-trips-container .connections-trips p {
+    text-align: center;
+}
+
+.connections-trips-container .connections-trips .number {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.connections-trips-container .connections-trips .label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*--------------------------------- counters --------------------------------*/
+.profile-container .counters {
+    width: 100%;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-container .counters .counter {
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    
+    border-radius: 30px;
+    background: linear-gradient(90deg, #af69e6, #daabff);
+
+    cursor: pointer;
+}
+
+.profile-container .counters .counter .label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+}
+
+.profile-container .counters .counter .number {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+/*----------------------------- navigation-bar --------------------------*/
+.profile-container .navigation-bar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.profile-container .navigation-bar .navigation-btn {
+    position: relative;
+    padding-bottom: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.profile-container .navigation-bar .navigation-btn svg {
+    width: 100%;
+}
+
+.profile-container .navigation-bar .navigation-btn p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+}
+
+.profile-container .navigation-bar .navigation-btn.active {
+    border-bottom: 3px solid #000;
+}
+
+.profile-container .navigation-bar .navigation-btn.active p {
+    font-weight: 600;
+    color: #000;
+}
+
+/*------------------------- videos-imgs-container ----------------------*/
+.videos-imgs-container {
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+}
+
+.videos-imgs-container .videos-imgs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+.videos-imgs-container .videos-imgs .video-img {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 9/12;
+    cursor: pointer;
+}
+
+.videos-imgs-container .videos-imgs .video-img img,
+.videos-imgs-container .videos-imgs .video-img video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.videos-imgs-container .videos-imgs .video-img .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videos-imgs-container .videos-imgs .video-img .bottom p {
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-shadow: 0 2px 4px #000000;
+}
+
+.videos-imgs-container .no-assets-p {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*--------------------------- profile-popup -------------------------*/
+.profile-popup {
+    position: fixed;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    transition: .4s top ease-in-out;
+}
+
+.profile-popup.active {
+    top: 50px;
+}
+
+.profile-popup .popup-body {
+    width: 100%;
+    max-width: 700px;
+
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -8px 20px #00000020;
+    overflow: hidden;
+}
+
+.profile-popup .popup-body .popup-header {
+    width: 100%;
+    padding: 15px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-popup .popup-body .popup-header p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile-popup .popup-body .popup-header .cross {
+    font-size: 19px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-popup .popup-body .profile-connections {
+    width: 100%;
+    padding: 0 20px 20px;
+    height: calc(100% - 110px);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.profile-popup .popup-body .profile-connections .user {
+    width: 100%;
+
+    display: flex;
+    gap: 10px;
+}
+
+.profile-popup .popup-body .profile-connections .user .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-popup .popup-body .profile-connections .user .user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-popup .popup-body .profile-connections .user .user-infos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-popup .popup-body .profile-connections .user .user-infos .user-fullname {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.profile-popup .popup-body .profile-connections .user .user-infos .user-username {
+    margin-top: -3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*---------------------------- trips-container -------------------------*/
+.trips-container {
+    width: 100%;
+    height: calc(100% - 110px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trips-container .trips-nav-bar {
+    padding: 0 20px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    border-bottom: .5px solid #dddddd;
+}
+
+.trips-container .trips-nav-bar .trip-nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.trips-container .trips-nav-bar .trip-nav-btn.active .label {
+    font-weight: 600;
+}
+
+.trips-container .trips-nav-bar .trip-nav-btn .label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.trips-container .trpis-content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*----------------------------- countries list --------------------------*/
+
+.countries-list-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.countries-list-container .title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.countries-list-container .paragraph {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
+.countries-list-container .no-countries {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+}
+
+.countries-list-container .list {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*------------------------------- flag-container --------------------------*/
+.countries-list-container .list .flag-container {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    width: 100%;
+    /* min-width: 43%; */
+    /* max-width: 170px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.countries-list-container .list .flag-container .remove {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    background-color: #f7351c;
+
+    z-index: 1;
+}
+
+.countries-list-container .list .flag-container .x {
+    color: #fff;
+    font-size: 8px;
+}
+
+.countries-list-container .list .flag-container .flag {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000020;
+}
+
+.countries-list-container .list .flag-container .country-name {
+    width: 100%;
+    margin-top: 5px;
+    
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*----------------------------- add countries container --------------------------*/
+.add-countries-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-countries-container .title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.add-countries-container .paragraph {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
+.add-countries-container .add-countries-form {
+    padding: 20px 0 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-countries-container .add-countries-form .select-container {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-countries-container .add-countries-form .select-container label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.add-countries-container .add-countries-form .select-container select {
+    width: 100%;
+    padding: 6px 10px;
+
+    border-radius: 6px;
+    border: none;
+    outline: none;
+
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.add-countries-container .add-countries-form .select-container select option {
+    font-size: 14px;
+}
+
+.add-countries-container .add-countries-form button {
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 8px 40px;
+    
+    border-radius: 6px;
+    background-color: #d5aaef;
+    color: #fff;
+}

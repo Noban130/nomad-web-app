@@ -1,0 +1,205 @@
+.edit-profile-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+/*------------------ navbar -----------------*/
+
+.edit-profile-container .navbar {
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-profile-container .navbar .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.edit-profile-container .navbar .left p {
+    font-size: 14px;
+}
+
+.edit-profile-container .navbar .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-profile-container .edit-profile-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-profile-container .profile-img {
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+}
+
+.edit-profile-container .uploading {
+    width: 100%;
+    padding: 20px 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: uploadAnimation 2s ease infinite;
+    -webkit-animation: uploadAnimation 2s ease infinite;
+    -moz-animation: uploadAnimation 2s ease infinite;
+}
+
+.uploading {
+    width: 100%;
+    padding: 20px 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: uploadAnimation 2s ease infinite;
+    -webkit-animation: uploadAnimation 2s ease infinite;
+    -moz-animation: uploadAnimation 2s ease infinite;
+}
+
+@keyframes uploadAnimation {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.edit-profile-container .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.edit-profile-container .profile-img label {
+    position: absolute;
+    top: 53px;
+    right: -3px;
+
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #d5aaef;
+
+    cursor: pointer;
+}
+
+.edit-profile-form {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-profile-form .input-container {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.edit-profile-form .input-container label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.edit-profile-form .input-container input {
+    width: 100%;
+    padding: 6px 10px;
+
+    border-radius: 6px;
+    border: none;
+    outline: none;
+
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.edit-profile-form .select-container {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.edit-profile-form .select-container label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.edit-profile-form .select-container select {
+    width: 100%;
+    padding: 6px 10px;
+
+    border-radius: 6px;
+    border: none;
+    outline: none;
+
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.edit-profile-form .select-container select option {
+    font-size: 14px;
+}
+
+.edit-profile-form button {
+    margin-top: auto;
+    margin-left: auto;
+    padding: 8px 40px;
+    
+    border-radius: 6px;
+    background-color: #d5aaef;
+    color: #fff;
+}

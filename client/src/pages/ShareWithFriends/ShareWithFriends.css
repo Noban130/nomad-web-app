@@ -1,0 +1,188 @@
+.share-WithFriends-wrapper {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: url('../../assets/imgs/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.share-WithFriends-container {
+    margin: auto;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 500px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.share-WithFriends-container .header {
+    margin-bottom: 10px;
+}
+
+.share-WithFriends-container .text {
+    max-width: 300px;
+
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.share-WithFriends-container .paragraph {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    max-width: 300px;
+    
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+.share-WithFriends-container .connectContainer {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+
+    background-color: #ffffff20;
+    border: 1px solid #ffffff40;
+    border-radius: 10px;
+}
+
+.share-WithFriends-container .connectImg {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.share-WithFriends-container .connectText {
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.share-WithFriends-container .shareToSocielMediaImg {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 230px;
+
+    height: 230px;
+    object-fit: contain;
+}
+
+.share-WithFriends-container .earnContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.share-WithFriends-container .earnImage {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.share-WithFriends-container .earnText {
+    max-width: 200px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    text-align: start;
+    font-size: 12px;
+    color: #fff;
+}
+
+.share-WithFriends-wrapper .skipScreen {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000e0;
+    z-index: 20;
+}
+
+.share-WithFriends-wrapper .skipBody {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.share-WithFriends-wrapper .skipFirstText {
+    margin-bottom: 10px;
+    max-width: 300px;
+    
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.share-WithFriends-wrapper .skipSecondText {
+    margin-bottom: 20px;
+    max-width: 300px;
+    
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+}
+
+@media (min-width: 700px) {
+    .share-WithFriends-container .name {
+        margin: 0;
+    }
+
+    .share-WithFriends-container .shareToSocielMediaImg {
+        margin: 20px auto;
+    }
+
+    .share-WithFriends-container .shareToSocielMediaImg {
+        max-width: 170px;
+    }
+
+    .share-WithFriends-container .connectContainer {
+        padding: 10px;
+    }
+}
